@@ -1,0 +1,30 @@
+# Dependencies
+/node_modules
+/.pnpm-store
+
+# Next.js build outputs
+/.next/
+/out/
+/build
+/dist
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE & System files
+.DS_Store
+*.pem
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local book PDFs
+/books/

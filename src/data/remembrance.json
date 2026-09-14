@@ -1,0 +1,82 @@
+[
+  {
+    "id": "rem-01",
+    "titleTa": "தினமணி நாளிதழ் நினைவஞ்சலி செய்தி 1",
+    "descriptionTa": "தமிழண்ணல் அவர்களின் மறைவையொட்டி தினமணி நாளிதழில் வெளியான தலையங்கக் கட்டுரை மற்றும் செய்திக் குறிப்பு.",
+    "imageUrl": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Images/Remembrance/Remembrance1.jpg",
+    "categoryTa": "செய்தித்தாள் குறிப்புகள்",
+    "year": "2015"
+  },
+  {
+    "id": "rem-02",
+    "titleTa": "நினைவேந்தல் விழா அழைப்பிதழ் 2",
+    "descriptionTa": "உலகத் தமிழ்ச் சங்க அறிஞர்கள் பங்கேற்ற நினைவேந்தல் விழா அழைப்பிதழ் ஆவணம்.",
+    "imageUrl": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Images/Remembrance/Remembrance2.jpg",
+    "categoryTa": "அழைப்பிதழ்கள்",
+    "year": "2016"
+  },
+  {
+    "id": "rem-03",
+    "titleTa": "மதுரைக் காமராசர் பல்கலைக்கழக நினைவு மாலை 3",
+    "descriptionTa": "மதுரைக் காமராசர் பல்கலைக்கழகத் தமிழ்த்துறை சார்பில் வெளியிடப்பட்ட நினைவஞ்சலிச் சிற்றேடு.",
+    "imageUrl": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Images/Remembrance/Remembrance3.jpg",
+    "categoryTa": "நினைவஞ்சலி மலர்",
+    "year": "2016"
+  },
+  {
+    "id": "rem-04",
+    "titleTa": "உலகத் தமிழ்ச் சங்க அறிஞர்கள் புகழஞ்சலிக் கூட்டம் 4",
+    "descriptionTa": "மதுரையில் நடைபெற்ற தமிழண்ணல் நினைவேந்தல் கருத்தரங்க புகைப்பட ஆவணம்.",
+    "imageUrl": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Images/Remembrance/Remembrance4.jpg",
+    "categoryTa": "புகழஞ்சலி நிகழ்வுகள்",
+    "year": "2016"
+  },
+  {
+    "id": "rem-05",
+    "titleTa": "தினமணி 'உங்கள் தமிழைத் தெரிந்து கொள்ளுங்கள்' சிறப்புத் தொகுப்பு 5",
+    "descriptionTa": "தினமணியில் வெளியான வாராந்திரத் பத்திகளின் நினைவேந்தல் சிறப்புப் பதிப்பு.",
+    "imageUrl": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Images/Remembrance/Remembrance5.jpg",
+    "categoryTa": "செய்தித்தாள் குறிப்புகள்",
+    "year": "2015"
+  },
+  {
+    "id": "rem-06",
+    "titleTa": "நினைவு அறக்கட்டளை அழைப்பிதழ் 6",
+    "descriptionTa": "தமிழ்ப் பேரறிஞர்கள் பங்கேற்ற நினைவேந்தல் கருத்தரங்க அழைப்பிதழ்.",
+    "imageUrl": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Images/Remembrance/Remembrance6.jpg",
+    "categoryTa": "அழைப்பிதழ்கள்",
+    "year": "2017"
+  },
+  {
+    "id": "rem-07",
+    "titleTa": "நினைவேந்தல் நிகழ்வுப் புகைப்படம் 7",
+    "descriptionTa": "தமிழ்ப் பேரறிஞர்கள் மற்றும் குடும்ப உறுப்பினர்கள் அஞ்சலி செலுத்தும் புகைப்பட ஆவணம்.",
+    "imageUrl": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Images/Remembrance/Remembrance7.jpg",
+    "categoryTa": "புகழஞ்சலி நிகழ்வுகள்",
+    "year": "2017"
+  },
+  {
+    "id": "rem-08",
+    "titleTa": "நினைவேந்தல் கட்டுரைக் கோவை 8",
+    "descriptionTa": "தமிழண்ணல் அவர்களின் தமிழ்ப் பணிகளைப் போற்றும் நினைவஞ்சலிக் கட்டுரைகள்.",
+    "imageUrl": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Images/Remembrance/Remembrance8.jpg",
+    "categoryTa": "நினைவஞ்சலி மலர்",
+    "year": "2018"
+  },
+  {
+    "id": "rem-09",
+    "titleTa": "தமிழ்ப் பேராயம் நினைவஞ்சலி 9",
+    "descriptionTa": "தமிழ்ப் பேராயம் வெளியிட்ட தமிழண்ணல் குறித்த நினைவுச் செய்தி ஆவணம்.",
+    "imageUrl": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Images/Remembrance/Remembrance9.jpg",
+    "categoryTa": "செய்தித்தாள் குறிப்புகள்",
+    "year": "2018"
+  },
+  {
+    "id": "rem-10",
+    "titleTa": "நினைவு அறக்கட்டளைப் சொற்பொழிவு 10",
+    "descriptionTa": "தமிழண்ணல் நினைவு அறக்கட்டளை சார்பில் நடைபெற்ற வருடாந்திரச் சொற்பொழிவு நிகழ்வு ஆவணம்.",
+    "imageUrl": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Images/Remembrance/Remembrance10.jpg",
+    "categoryTa": "அழைப்பிதழ்கள்",
+    "year": "2019"
+  }
+]

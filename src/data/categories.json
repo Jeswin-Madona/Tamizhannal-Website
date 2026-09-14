@@ -1,0 +1,90 @@
+[
+  {
+    "id": "cat-literary",
+    "slug": "literature",
+    "nameTa": "இலக்கியம்",
+    "nameEn": "Literature",
+    "descriptionTa": "பரிசில் வாழ்க்கை, சங்க இலக்கிய ஒப்பியல், தொன்மை அகச்சான்றுகள் மற்றும் சங்க மரபு ஆய்வுகள்.",
+    "bookCount": 5
+  },
+  {
+    "id": "cat-tolkappiyam",
+    "slug": "tolkappiyam",
+    "nameTa": "தொல்காப்பியம்",
+    "nameEn": "Tolkappiyam",
+    "descriptionTa": "தொல்காப்பியர், தொல்காப்பியம் எழுத்ததிகாரம், சொல்லதிகாரம் மற்றும் பொருளதிகார உரைத் தொகுதிகள்.",
+    "bookCount": 5
+  },
+  {
+    "id": "cat-thirukkural",
+    "slug": "thirukkural",
+    "nameTa": "திருக்குறள்",
+    "nameEn": "Thirukkural",
+    "descriptionTa": "திருவள்ளுவர் அருளிய திருக்குறள், திருக்குறள் நுண்ணுரை மற்றும் வாழ்வியல் உரை நூல்கள்.",
+    "bookCount": 5
+  },
+  {
+    "id": "cat-grammar",
+    "slug": "grammar",
+    "nameTa": "இலக்கணம்",
+    "nameEn": "Grammar",
+    "descriptionTa": "நன்னூல் எழுத்ததிகாரம் மற்றும் நன்னூல் சொல்லதிகாரம் உரைநூல்கள்.",
+    "bookCount": 2
+  },
+  {
+    "id": "cat-commentary",
+    "slug": "commentary",
+    "nameTa": "உரை",
+    "nameEn": "Commentary",
+    "descriptionTa": "தண்டியலங்காரம் மற்றும் தமிழ் நான்மறை உரை விளக்கங்கள்.",
+    "bookCount": 2
+  },
+  {
+    "id": "cat-linguistics",
+    "slug": "linguistics",
+    "nameTa": "மொழியியல்",
+    "nameEn": "Linguistics",
+    "descriptionTa": "சொல் புதிது சுவை புதிது, தமிழில் பிழைகளும் திருத்தமும் மற்றும் மொழியியல் ஆய்வுகள்.",
+    "bookCount": 3
+  },
+  {
+    "id": "cat-research",
+    "slug": "research",
+    "nameTa": "ஆய்வு",
+    "nameEn": "Research",
+    "descriptionTa": "தமிழர் சமயமும் சமஸ்கிருதமும் மற்றும் தமிழரின் வினைக் கோட்பாடு ஆராய்ச்சி நூல்கள்.",
+    "bookCount": 2
+  },
+  {
+    "id": "cat-thamizhannal",
+    "slug": "thamizhannal",
+    "nameTa": "தமிழண்ணல்",
+    "nameEn": "Thamizhannal",
+    "descriptionTa": "அண்ணல் தமிழ் மற்றும் தமிழண்ணல் தமிழுக்குத் தந்த சீர்வரிசை ஆவணங்கள்.",
+    "bookCount": 2
+  },
+  {
+    "id": "cat-tamils",
+    "slug": "tamils",
+    "nameTa": "தமிழர்",
+    "nameEn": "Tamils",
+    "descriptionTa": "தமிழனின் தாழ்வு மனப்பான்மை மற்றும் ஊடகங்களால் ஊரைப் பற்றும் நெருப்பு.",
+    "bookCount": 2
+  },
+  {
+    "id": "cat-novel",
+    "slug": "novel",
+    "nameTa": "புதினம்",
+    "nameEn": "Novel",
+    "descriptionTa": "வாழ்வரசி மற்றும் நச்சுவளையம் புதினங்கள்.",
+    "bookCount": 2
+  },
+  {
+    "id": "cat-others",
+    "slug": "others",
+    "nameTa": "மற்றவை",
+    "nameEn": "Others",
+    "descriptionTa": "தாலாட்டு மற்றும் உள்ளங்கள் ஒன்றிடும் அன்றில் பறவைகள் கட்டுரைகள்.",
+    "bookCount": 2
+  }
+]

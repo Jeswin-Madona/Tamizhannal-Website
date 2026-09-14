@@ -1,0 +1,40 @@
+{
+  "id": "audio1",
+  "titleTa": "பழகு தமிழ் அறிவோம் (10 மணி நேர வானொலித் தொடர்)",
+  "titleEn": "Pazhagu Thamizh Arivom Radio Series",
+  "speakersTa": [
+    "முனைவர் தமிழண்ணல்",
+    "முனைவர் சுந்தர ஆவுடையப்பன்"
+  ],
+  "descriptionTa": "தினமணி நாளிதழில் முனைவர் தமிழண்ணல் எழுதிய 'உங்கள் தமிழைத் தெரிந்து கொள்ளுங்கள்' தொடரை அடிப்படையாகக் கொண்டு, திருச்சி / மதுரை வானொலியில் 49 வாரங்கள் ஒளிபரப்பப்பட்ட வரலாற்றுச் சிறப்புமிக்க 10 மணி நேர உரையாடல் பதிவு.",
+  "durationMinutes": 600,
+  "broadcastHistoryTa": "அனைத்திந்திய வானொலி (AIR Madurai / Tiruchirappalli) • 49 வார ஒளிபரப்பு",
+  "audioUrl": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Audio/audio1-1.mp3",
+  "parts": [
+    {
+      "part": 1,
+      "titleTa": "பகுதி 1",
+      "url": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Audio/audio1-1.mp3"
+    },
+    {
+      "part": 2,
+      "titleTa": "பகுதி 2",
+      "url": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Audio/audio1-2.mp3"
+    },
+    {
+      "part": 3,
+      "titleTa": "பகுதி 3",
+      "url": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Audio/audio1-3.mp3"
+    },
+    {
+      "part": 4,
+      "titleTa": "பகுதி 4",
+      "url": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Audio/audio1-4.mp3"
+    },
+    {
+      "part": 5,
+      "titleTa": "பகுதி 5",
+      "url": "https://mprurexzonwfqlsarned.supabase.co/storage/v1/object/public/Books/Audio/audio1-5.mp3"
+    }
+  ]
+}

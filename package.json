@@ -1,0 +1,42 @@
+{
+  "name": "tamizhannal-website",
+  "version": "1.0.0",
+  "description": "Tamizhannal Digital Literary Archive",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start"
+  },
+  "keywords": [
+    "tamizhannal",
+    "tamil",
+    "literature",
+    "archive"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.115.0",
+    "flexsearch": "^0.8.212",
+    "lucide-react": "^1.33.0",
+    "next": "^16.3.2",
+    "page-flip": "^2.0.7",
+    "pdfjs-dist": "^6.2.108",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "26.4.0",
+    "@types/react": "19.2.18",
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.26",
+    "tailwindcss": "^4.3.3",
+    "typescript": "7.0.2"
+  }
+}
