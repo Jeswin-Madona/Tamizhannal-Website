@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="100%" height="100%">
+  <defs>
+    <!-- Arrowhead markers -->
+    <marker id="arrow-maroon" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5A1F24"/>
+    </marker>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#B08D57"/>
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6B625C"/>
+    </marker>
+    
+    <!-- Subtle drop shadows -->
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#231D1A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <style>
+    .bg { fill: #FDFBF7; }
+    .card-bg { fill: #F7F2E6; stroke: #E2D9C8; stroke-width: 1.5px; }
+    .title { font-family: system-ui, -apple-system, sans-serif; font-weight: 700; fill: #5A1F24; font-size: 20px; }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; font-weight: 500; fill: #6B625C; font-size: 13px; }
+    .section-title { font-family: system-ui, -apple-system, sans-serif; font-weight: 700; fill: #5A1F24; font-size: 12px; letter-spacing: 0.5px; text-transform: uppercase; }
+    .node-title { font-family: system-ui, -apple-system, sans-serif; font-weight: 600; fill: #231D1A; font-size: 13px; }
+    .node-desc { font-family: system-ui, -apple-system, sans-serif; font-weight: 400; fill: #6B625C; font-size: 11px; }
+    .badge-text { font-family: system-ui, -apple-system, sans-serif; font-weight: 600; fill: #FFFFFF; font-size: 10px; }
+    .arrow-label { font-family: system-ui, -apple-system, sans-serif; font-weight: 500; fill: #5A1F24; font-size: 11px; }
+  </style>
+
+  <!-- Background Container -->
+  <rect width="960" height="560" class="bg" rx="16" stroke="#E2D9C8" stroke-width="2"/>
+
+  <!-- Header Section -->
+  <g transform="translate(40, 32)">
+    <text class="title" x="0" y="0">TAMIZHANNAL Digital Literary Archive — Architecture</text>
+    <text class="subtitle" x="0" y="20">End-to-end data flow, client readers, Next.js App Router engine, and Supabase cloud storage</text>
+  </g>
+
+  <!-- LAYER 1: CLIENT / USER INTERFACE -->
+  <g transform="translate(40, 75)">
+    <rect width="880" height="90" fill="#FFFFFF" stroke="#E2D9C8" stroke-width="1.5" rx="10" filter="url(#shadow)"/>
+    <text class="section-title" x="16" y="24">1. Client Presentation Layer (Tamil-First UI / UX)</text>
+    
+    <!-- User Browser Node -->
+    <g transform="translate(16, 36)">
+      <rect width="260" height="42" fill="#F7F2E6" stroke="#B08D57" stroke-width="1.2" rx="6"/>
+      <text class="node-title" x="12" y="24">User / Responsive Web Browser</text>
+      <text class="node-desc" x="12" y="37">Desktop &amp; Mobile Responsive View</text>
+    </g>
+    
+    <!-- Search & Navigation -->
+    <g transform="translate(310, 36)">
+      <rect width="260" height="42" fill="#F7F2E6" stroke="#B08D57" stroke-width="1.2" rx="6"/>
+      <text class="node-title" x="12" y="24">Search Modal &amp; Category Filters</text>
+      <text class="node-desc" x="12" y="37">Multi-field instant search &amp; catalog tags</text>
+    </g>
+
+    <!-- Reading Interfaces -->
+    <g transform="translate(604, 36)">
+      <rect width="260" height="42" fill="#F7F2E6" stroke="#5A1F24" stroke-width="1.2" rx="6"/>
+      <text class="node-title" x="12" y="24">Dual-Mode Document Readers</text>
+      <text class="node-desc" x="12" y="37">Standard Canvas Reader &amp; 3D Flipbook</text>
+    </g>
+  </g>
+
+  <!-- Connectors: Layer 1 to Layer 2 -->
+  <line x1="170" y1="165" x2="170" y2="200" stroke="#5A1F24" stroke-width="1.5" marker-end="url(#arrow-maroon)"/>
+  <line x1="440" y1="165" x2="440" y2="200" stroke="#5A1F24" stroke-width="1.5" marker-end="url(#arrow-maroon)"/>
+  <line x1="734" y1="165" x2="734" y2="200" stroke="#5A1F24" stroke-width="1.5" marker-end="url(#arrow-maroon)"/>
+
+  <!-- LAYER 2: NEXT.JS APPLICATION CORE -->
+  <g transform="translate(40, 205)">
+    <rect width="880" height="175" fill="#FFFFFF" stroke="#5A1F24" stroke-width="1.5" rx="10" filter="url(#shadow)"/>
+    <rect width="70" height="20" x="794" y="12" fill="#5A1F24" rx="4"/>
+    <text class="badge-text" x="803" y="26">Next.js 16</text>
+    <text class="section-title" x="16" y="26">2. Application Core (App Router &amp; Dynamic Engines)</text>
+
+    <!-- Sub-node 1: App Pages -->
+    <g transform="translate(16, 42)">
+      <rect width="260" height="115" class="card-bg" rx="8"/>
+      <text class="node-title" x="14" y="24">App Router Page Components</text>
+      <text class="node-desc" x="14" y="44">• Home Page &amp; Audio Section (/)</text>
+      <text class="node-desc" x="14" y="60">• Scholar Biography (/tamil-vaazhvu)</text>
+      <text class="node-desc" x="14" y="76">• Catalog &amp; Book Details (/books)</text>
+      <text class="node-desc" x="14" y="92">• Gallery, Articles &amp; Tributes</text>
+    </g>
+
+    <!-- Sub-node 2: Reader Engine -->
+    <g transform="translate(310, 42)">
+      <rect width="260" height="115" class="card-bg" rx="8"/>
+      <text class="node-title" x="14" y="24">Digital Reading Engines</text>
+      <text class="node-desc" x="14" y="44">• PDF.js Web Worker Canvas Engine</text>
+      <text class="node-desc" x="14" y="60">• PageFlip 3D Turning Integration</text>
+      <text class="node-desc" x="14" y="76">• Zoom, Themes (Paper/Sepia/Night)</text>
+      <text class="node-desc" x="14" y="92">• Page Jump &amp; Fullscreen Controls</text>
+    </g>
+
+    <!-- Sub-node 3: API Routes -->
+    <g transform="translate(604, 42)">
+      <rect width="260" height="115" class="card-bg" rx="8"/>
+      <text class="node-title" x="14" y="24">Server API Routes</text>
+      <text class="node-desc" x="14" y="44">• /api/contact: Contact Form Endpoint</text>
+      <text class="node-desc" x="14" y="60">• /api/media/[...path]: Local Media Proxy</text>
+      <text class="node-desc" x="14" y="76">• Honeypot Anti-Spam &amp; Validation</text>
+      <text class="node-desc" x="14" y="92">• Path Traversal &amp; Unicode Fallbacks</text>
+    </g>
+  </g>
+
+  <!-- Connectors: Layer 2 to Layer 3 -->
+  <line x1="170" y1="380" x2="170" y2="415" stroke="#B08D57" stroke-width="1.5" marker-end="url(#arrow-gold)"/>
+  <line x1="440" y1="380" x2="440" y2="415" stroke="#5A1F24" stroke-width="1.5" marker-end="url(#arrow-maroon)"/>
+  <line x1="734" y1="380" x2="734" y2="415" stroke="#6B625C" stroke-width="1.5" marker-end="url(#arrow-muted)"/>
+
+  <!-- LAYER 3: DATA & STORAGE ARCHITECTURE -->
+  <g transform="translate(40, 420)">
+    <rect width="880" height="115" fill="#FFFFFF" stroke="#E2D9C8" stroke-width="1.5" rx="10" filter="url(#shadow)"/>
+    <text class="section-title" x="16" y="24">3. Content Data &amp; External Services Layer</text>
+
+    <!-- Local Data Node -->
+    <g transform="translate(16, 36)">
+      <rect width="260" height="62" fill="#F7F2E6" stroke="#B08D57" stroke-width="1.2" rx="6"/>
+      <text class="node-title" x="12" y="24">Static JSON Content Repository</text>
+      <text class="node-desc" x="12" y="40">books.json • categories.json • articles.json</text>
+      <text class="node-desc" x="12" y="53">audio.json • gallery.json • remembrance.json</text>
+    </g>
+
+    <!-- Supabase Storage Node (Cylinder representation) -->
+    <g transform="translate(310, 36)">
+      <rect width="260" height="62" fill="#F7F2E6" stroke="#5A1F24" stroke-width="1.2" rx="6"/>
+      <text class="node-title" x="12" y="24">Supabase Storage Buckets</text>
+      <text class="node-desc" x="12" y="40">Cloud CDN Storage: Books, Gallery, Audio,</text>
+      <text class="node-desc" x="12" y="53">Remembrance (Public CDN Asset Delivery)</text>
+    </g>
+
+    <!-- External Integration Node -->
+    <g transform="translate(604, 36)">
+      <rect width="260" height="62" fill="#F7F2E6" stroke="#6B625C" stroke-width="1.2" rx="6"/>
+      <text class="node-title" x="12" y="24">Google Apps Script Web App</text>
+      <text class="node-desc" x="12" y="40">Serverless Email Relay Service</text>
+      <text class="node-desc" x="12" y="53">Dispatches Contact Form submissions</text>
+    </g>
+  </g>
+</svg>

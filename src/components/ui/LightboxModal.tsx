@@ -189,20 +189,20 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
           {!imageError ? (
             <img
               src={currentItem.imageUrl}
-              alt={currentItem.titleTa || currentItem.captionTa || `${currentItem.categoryTa} - ஆவணம் ${currentIndex + 1}`}
+              alt={currentItem.captionTa || currentItem.titleTa || `${currentItem.categoryTa} - ஆவணம் ${currentItem.categoryIndex || currentIndex + 1}`}
               onError={() => setImageError(true)}
-              className="w-full h-full object-contain rounded border border-[#B08D57]/40 shadow-2xl transition-all duration-200"
+              className="max-w-full max-h-full object-contain rounded border border-[#B08D57]/40 shadow-2xl transition-all duration-200"
               style={{
-                maxHeight: isFullscreen ? 'calc(100vh - 120px)' : 'calc(94vh - 170px)',
+                maxHeight: isFullscreen ? 'calc(100vh - 160px)' : 'calc(80vh - 160px)',
               }}
             />
           ) : (
-            <div className="w-full h-full min-h-[350px] flex flex-col items-center justify-center text-center p-6 text-[#FDFBF7]/90 border border-[#B08D57]/30 rounded bg-[#231D1A]">
+            <div className="w-full h-full min-h-[250px] flex flex-col items-center justify-center text-center p-6 text-[#FDFBF7]/90 border border-[#B08D57]/30 rounded bg-[#231D1A]">
               <div className="w-16 h-16 rounded-full bg-[#B08D57]/20 text-[#B08D57] flex items-center justify-center font-serif text-3xl font-bold mb-3 border border-[#B08D57]/40">
                 <ImageIcon className="w-8 h-8 text-[#B08D57]" />
               </div>
               <p className="font-serif text-lg font-bold text-[#FDFBF7]">
-                {currentItem.titleTa || currentItem.categoryTa}
+                {currentItem.captionTa || currentItem.categoryTa}
               </p>
             </div>
           )}
@@ -212,23 +212,28 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
             <button
               type="button"
               onClick={handleNext}
-              className="absolute right-3 top-1/2 -translate-y-1/2 p-3 rounded-full bg-[#3E171B]/90 text-[#FAF5EA] border border-[#E5C170]/70 hover:bg-[#5A1F24] hover:scale-110 transition-all shadow-2xl z-20 focus:outline-none focus:ring-2 focus:ring-[#E5C170] cursor-pointer"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 p-2.5 sm:p-3 rounded-full bg-[#3E171B]/90 text-[#FAF5EA] border border-[#E5C170]/70 hover:bg-[#5A1F24] hover:scale-110 transition-all shadow-2xl z-20 focus:outline-none focus:ring-2 focus:ring-[#E5C170] cursor-pointer"
               aria-label="அடுத்த ஆவணம்"
               title="அடுத்த ஆவணம் (Right Arrow)"
             >
-              <ChevronRight className="w-6 h-6 text-[#E5C170]" />
+              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-[#E5C170]" />
             </button>
           )}
 
         </div>
 
-        {/* Compact Metadata Footer Bar */}
-        <div className="bg-[#FAF5EA] border-t border-[#B08D57]/30 p-3 sm:p-4 space-y-1.5 flex-shrink-0">
-          {currentItem.titleTa && (
-            <h3 className="font-serif text-base sm:text-lg font-bold text-[#5A1F24] leading-snug">
+        {/* Archival Information / Caption Footer Bar */}
+        <div className="bg-[#FAF5EA] border-t border-[#B08D57]/30 p-3.5 sm:p-4 space-y-2 flex-shrink-0">
+          {/* Image-Specific Caption */}
+          {currentItem.captionTa ? (
+            <h3 className="font-serif text-base sm:text-lg font-bold text-[#5A1F24] leading-relaxed">
+              {currentItem.captionTa}
+            </h3>
+          ) : currentItem.titleTa ? (
+            <h3 className="font-serif text-base sm:text-lg font-bold text-[#5A1F24] leading-relaxed">
               {currentItem.titleTa}
             </h3>
-          )}
+          ) : null}
 
           {currentItem.descriptionTa && (
             <p className="text-xs sm:text-sm text-[#231D1A] leading-relaxed line-clamp-3">
@@ -236,17 +241,18 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
             </p>
           )}
 
-          <div className="flex items-center gap-4 text-xs text-[#6B625C] pt-1.5 border-t border-[#B08D57]/20 font-medium">
+          {/* Category & Year Metadata */}
+          <div className="flex flex-wrap items-center justify-between gap-3 text-xs text-[#6B625C] pt-2 border-t border-[#B08D57]/20 font-medium">
+            <span className="flex items-center gap-1.5 font-bold text-[#5A1F24]">
+              <Tag className="w-3.5 h-3.5 text-[#B08D57]" />
+              <span>தொகுதி: <strong className="font-bold text-[#5A1F24]">{currentItem.categoryTa}</strong></span>
+            </span>
             {currentItem.year && (
-              <span className="flex items-center gap-1 font-bold text-[#5A1F24]">
+              <span className="flex items-center gap-1.5 font-bold text-[#5A1F24]">
                 <Calendar className="w-3.5 h-3.5 text-[#B08D57]" />
-                <span>ஆண்டு: {currentItem.year}</span>
+                <span>ஆண்டு: <strong className="font-mono font-bold text-[#5A1F24]">{currentItem.year}</strong></span>
               </span>
             )}
-            <span className="flex items-center gap-1 font-bold text-[#5A1F24]">
-              <Tag className="w-3.5 h-3.5 text-[#B08D57]" />
-              <span>வகை: {currentItem.categoryTa}</span>
-            </span>
           </div>
         </div>
 

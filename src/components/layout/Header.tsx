@@ -2,10 +2,10 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Search } from 'lucide-react';
 import { SearchModal } from '@/components/ui/SearchModal';
-import { QuillLogo } from '@/components/ui/QuillLogo';
 
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -34,8 +34,17 @@ export const Header: React.FC = () => {
         <div className="container flex items-center justify-between py-3">
           
           {/* 1. Brand Grouping (Left) */}
-          <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
-            <QuillLogo size={42} />
+          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group flex-shrink-0">
+            <div className="relative flex items-center justify-center flex-shrink-0 w-9 h-9 sm:w-10 sm:h-10 rounded-lg overflow-hidden border border-[#B08D57]/40 shadow-xs bg-[#2E0F12]">
+              <Image
+                src="/icon.png"
+                alt="தமிழண்ணல் சின்னம்"
+                width={40}
+                height={40}
+                priority
+                className="w-full h-full object-contain p-0.5 transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
             <div className="flex flex-col justify-center leading-tight">
               <span className="font-serif text-xl sm:text-2xl font-bold text-[#F5EFE4] tracking-tight group-hover:text-[#B08D57] transition-colors">
                 தமிழண்ணல்

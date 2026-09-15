@@ -71,7 +71,7 @@ export default function BookReaderPage({ params }: ReaderPageProps) {
 
         {/* Right: Mode Switcher — High Contrast Active & Inactive States */}
         <div
-          className="flex items-center gap-2 bg-[#1F090C] p-1.5 rounded-lg border border-[#B08D57]/70 shadow-inner"
+          className="flex items-center gap-2 bg-[#1F090C] p-1.5 rounded-lg border border-[#B08D57]/70 shadow-inner w-full sm:w-auto justify-center"
           role="tablist"
           aria-label="வாசிப்பு பயன்முறை (Reading Mode)"
         >
@@ -83,7 +83,7 @@ export default function BookReaderPage({ params }: ReaderPageProps) {
             aria-selected={readingMode === 'standard'}
             aria-controls="reader-panel"
             onClick={() => setReadingMode('standard')}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-md text-xs transition-all min-h-[42px] focus:outline-none focus:ring-2 focus:ring-[#E5C170] focus:ring-offset-2 focus:ring-offset-[#1F090C] cursor-pointer ${
+            className={`flex items-center justify-center gap-2 px-3 sm:px-4 py-2.5 rounded-md text-xs transition-all min-h-[42px] flex-1 sm:flex-none focus:outline-none focus:ring-2 focus:ring-[#E5C170] focus:ring-offset-2 focus:ring-offset-[#1F090C] cursor-pointer ${
               readingMode === 'standard'
                 ? 'bg-[#E5C170] shadow-md border-2 border-[#FAF5EA] font-extrabold'
                 : 'bg-[#3E171B]/90 hover:bg-[#5A1F24] border border-[#B08D57]/50 font-bold'
@@ -110,7 +110,7 @@ export default function BookReaderPage({ params }: ReaderPageProps) {
             aria-selected={readingMode === 'flipbook'}
             aria-controls="reader-panel"
             onClick={() => setReadingMode('flipbook')}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-md text-xs transition-all min-h-[42px] focus:outline-none focus:ring-2 focus:ring-[#E5C170] focus:ring-offset-2 focus:ring-offset-[#1F090C] cursor-pointer ${
+            className={`flex items-center justify-center gap-2 px-3 sm:px-4 py-2.5 rounded-md text-xs transition-all min-h-[42px] flex-1 sm:flex-none focus:outline-none focus:ring-2 focus:ring-[#E5C170] focus:ring-offset-2 focus:ring-offset-[#1F090C] cursor-pointer ${
               readingMode === 'flipbook'
                 ? 'bg-[#E5C170] shadow-md border-2 border-[#FAF5EA] font-extrabold'
                 : 'bg-[#3E171B]/90 hover:bg-[#5A1F24] border border-[#B08D57]/50 font-bold'

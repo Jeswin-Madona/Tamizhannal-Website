@@ -97,14 +97,16 @@ export default function GalleryPage() {
             <div className="w-9 h-9 rounded-lg bg-[#5A1F24] text-[#E5C170] flex items-center justify-center flex-shrink-0 shadow-xs border border-[#E5C170]/40">
               <Filter className="w-4 h-4 text-[#E5C170]" />
             </div>
-            <div>
+            <div className="space-y-1 min-w-0">
               <span className="text-xs text-[#6B625C] font-normal block">தேர்ந்தெடுக்கப்பட்டத் தொகுதி:</span>
-              <span className="font-serif text-base md:text-lg font-bold text-[#5A1F24]">
-                {selectedCategory ? selectedCategory : 'அனைத்துப் புகைப்படங்கள்'}
-              </span>
-              <span className="ml-2.5 text-xs font-mono font-extrabold px-2.5 py-0.5 rounded-full bg-[#5A1F24] text-[#FAF5EA] border border-[#E5C170]/60 shadow-xs">
-                {galleryWithCategoryIndex.length} படங்கள்
-              </span>
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="font-serif text-base md:text-lg font-bold text-[#5A1F24] leading-snug">
+                  {selectedCategory ? selectedCategory : 'அனைத்துப் புகைப்படங்கள்'}
+                </span>
+                <span className="inline-flex items-center text-xs font-mono font-extrabold px-2.5 py-0.5 rounded-full bg-[#5A1F24] text-[#FAF5EA] border border-[#E5C170]/60 shadow-xs flex-shrink-0 whitespace-nowrap">
+                  {galleryWithCategoryIndex.length} படங்கள்
+                </span>
+              </div>
             </div>
           </div>
 
@@ -288,18 +290,26 @@ export default function GalleryPage() {
               </div>
             </div>
 
-            {/* Photo Content & Metadata Hierarchy — Non-repetitive Category + Year */}
+            {/* Photo Content & Metadata Hierarchy */}
             <div className="space-y-2 flex-1 flex flex-col justify-between">
               
+              {item.captionTa ? (
+                <p className="font-serif text-xs font-semibold text-[#5A1F24] leading-snug line-clamp-2 min-h-[2.25rem]">
+                  {item.captionTa}
+                </p>
+              ) : (
+                <div className="min-h-[2.25rem]" />
+              )}
+
               {/* Category Title & Year Metadata */}
-              <div className="flex items-center justify-between gap-2 text-xs pt-1 border-t border-[#B08D57]/20">
-                <span className="inline-flex items-center gap-1.5 font-serif font-bold text-[#5A1F24] text-xs">
-                  <span className="w-2 h-2 rounded-full bg-[#B08D57]" />
-                  <span>{item.categoryTa}</span>
+              <div className="flex items-center justify-between gap-2 text-xs pt-1.5 border-t border-[#B08D57]/20">
+                <span className="inline-flex items-center gap-1.5 font-serif font-bold text-[#5A1F24] text-xs truncate">
+                  <span className="w-2 h-2 rounded-full bg-[#B08D57] flex-shrink-0" />
+                  <span className="truncate">{item.categoryTa}</span>
                 </span>
                 {item.year && (
-                  <span className="font-mono text-[11px] font-bold text-[#5A1F24] bg-[#FAF5EA] px-2 py-0.5 rounded border border-[#B08D57]/30">
-                    ஆண்டு: {item.year}
+                  <span className="font-mono text-[11px] font-bold text-[#5A1F24] bg-[#FAF5EA] px-2 py-0.5 rounded border border-[#B08D57]/30 flex-shrink-0">
+                    {item.year}
                   </span>
                 )}
               </div>

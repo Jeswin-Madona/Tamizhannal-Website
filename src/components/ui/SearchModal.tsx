@@ -188,11 +188,11 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
 
                       {/* Title & Metadata Hierarchy */}
                       <div className="flex-1 space-y-1 min-w-0">
-                        <div className="flex flex-wrap items-center gap-2">
-                          <span className="badge-archival bg-[#E5C170] text-[#3E171B] font-extrabold text-[10px] px-2 py-0.5 border-none">
+                        <div className="flex flex-wrap items-center gap-2 min-w-0">
+                          <span className="badge-archival bg-[#E5C170] text-[#3E171B] font-extrabold text-[10px] px-2 py-0.5 border-none flex-shrink-0">
                             {book.categoryTa}
                           </span>
-                          <h4 className="font-serif font-bold text-sm sm:text-base text-[#5A1F24] group-hover:text-[#70262C] transition-colors truncate">
+                          <h4 className="font-serif font-bold text-sm sm:text-base text-[#5A1F24] group-hover:text-[#70262C] transition-colors truncate min-w-0 flex-1">
                             {book.titleTa}
                           </h4>
                         </div>

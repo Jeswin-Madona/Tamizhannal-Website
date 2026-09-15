@@ -26,9 +26,9 @@ export default function HomePage() {
     <div className="space-y-16 py-6">
       
       {/* 1. Archival Hero Section with Integrated Background Image */}
-      <section className="relative overflow-hidden bg-[#FAF5EA] py-14 md:py-20 px-4 sm:px-8 border-b border-[#B08D57]/30 min-h-[460px] md:min-h-[520px] flex items-center justify-center shadow-xs">
-        {/* Full-width background hero image */}
-        <div className="absolute inset-0 pointer-events-none select-none z-0">
+      <section className="relative overflow-hidden bg-[#FAF5EA] py-10 md:py-20 px-4 sm:px-8 border-b border-[#B08D57]/30 min-h-[460px] md:min-h-[520px] flex flex-col items-center justify-center shadow-xs">
+        {/* Full-width desktop background hero image */}
+        <div className="hidden md:block absolute inset-0 pointer-events-none select-none z-0">
           <Image
             src="/images/thamizhannal-hero.webp"
             alt="முனைவர் தமிழண்ணல் - தமிழ் மரபுக் காப்பகம்"
@@ -39,6 +39,20 @@ export default function HomePage() {
           />
           {/* Subtle center parchment glow */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(250,245,234,0.72)_0%,rgba(250,245,234,0.35)_45%,transparent_80%)] pointer-events-none" />
+        </div>
+
+        {/* Mobile background: Faded literary/books image */}
+        <div className="md:hidden absolute inset-0 pointer-events-none select-none z-0">
+          <Image
+            src="/images/mobile-books-bg.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-top opacity-20"
+          />
+          {/* Soft parchment blend overlay for high text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#FAF5EA]/75 via-[#FAF5EA]/60 to-[#FAF5EA]/90 pointer-events-none" />
         </div>
 
         {/* Hero Content Area */}
@@ -52,7 +66,7 @@ export default function HomePage() {
             முனைவர் தமிழண்ணல்
           </h1>
 
-          <p className="font-serif text-lg md:text-xl text-[#231D1A] max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="font-serif text-base sm:text-lg md:text-xl text-[#231D1A] max-w-3xl mx-auto leading-relaxed font-medium">
             சங்க இலக்கியம், தொல்காப்பியம், திருக்குறள் மற்றும் தமிழ் உரையாசிரிய வரலாற்றில் புகழ்பெற்ற தமிழறிஞர் முனைவர் இராம. பெரியகருப்பன் (தமிழண்ணல்) அவர்களின் வாழ்நூல் காப்பகம்.
           </p>
 
@@ -60,7 +74,7 @@ export default function HomePage() {
             <span>◆</span>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-1">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-1">
             <Link href="/books" className="btn btn-primary shadow-md min-h-[44px] px-6">
               <BookOpen className="w-4 h-4 !text-[#FDFBF7]" />
               <span>நூல்கள் காப்பகம் (86)</span>
@@ -69,6 +83,19 @@ export default function HomePage() {
               <span>வாழ்க்கை வரலாறு</span>
               <ArrowRight className="w-4 h-4 !text-[#5A1F24]" />
             </Link>
+          </div>
+
+          {/* Mobile Only: Thamizhannal Portrait below introductory content */}
+          <div className="md:hidden pt-4 sm:pt-6 flex flex-col items-center justify-center">
+            <div className="relative w-52 sm:w-60 max-w-[75vw] aspect-[504/676] rounded-xl overflow-hidden border-2 border-[#B08D57]/40 shadow-md bg-[#FAF5EA]">
+              <Image
+                src="/images/thamizhannal-portrait.jpg"
+                alt="முனைவர் தமிழண்ணல் - உருவப்படம்"
+                fill
+                sizes="(max-width: 768px) 240px, 0px"
+                className="object-cover object-center"
+              />
+            </div>
           </div>
 
         </div>
